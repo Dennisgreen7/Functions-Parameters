@@ -90,6 +90,10 @@ namespace HM
         //11.
         private static int IsPrime(int number)
         {
+            if(num == 1)
+            {
+                return 0;
+            }
              for(int i = 2; i <= number/2; i++)
             {
                 if (number % i == 0)

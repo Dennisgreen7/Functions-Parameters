@@ -90,25 +90,14 @@ namespace HM
         //11.
         private static int IsPrime(int number)
         {
-            int m = 2;
-            int count = 0;
-            while (m <= number)
+             for(int i = 2; i <= number/2; i++)
             {
-                if (number % m == 0)
+                if (number % i == 0)
                 {
-                    count++;
+                    return 0;
                 }
-                m++;
             }
-
-            if (count == 1)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return 1;
         }
         private static void CheckArrayForPrimeNumbers(int[] arr)
         {

@@ -52,14 +52,14 @@ namespace HM
         {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(i + 1);
+                Console.WriteLine(i);
             }
         }
         private static bool PrintNumbers(int number)
         {
             for (int i = 0; i < number; i++)
             {
-                Console.Write(i + 1 + ", ");
+                Console.Write(i + ", ");
             }
             if (number >= 1 && number <= 10)
             {

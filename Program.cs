@@ -101,26 +101,15 @@ namespace HM
         }
         private static void CheckArrayForPrimeNumbers(int[] arr)
         {
-            int count, m;
-
+            int flag;
             for (int i = 0; i < arr.Length; i++)
             {
-                count = 0;
-                m = 2;
-                while (m < arr[i])
+                flag = IsPrime(arr[i]);
+                if(flag == 0)
                 {
-                    if (arr[i] % m == 0)
-                    {
-                        count++;
-                        if (count == 1)
-                        {
-                            Console.WriteLine(arr[i] + " not prime");
-                        }
-                    }
-                    m++;
+                    Console.WriteLine(arr[i] + " not prime");
                 }
-
-                if (count == 0)
+                else
                 {
                     Console.WriteLine(arr[i] + " prime");
                 }
